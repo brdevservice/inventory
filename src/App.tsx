@@ -9,7 +9,7 @@ function App() {
         Inventory
       </h1>
       <button type='button' className='bg-blue-700 sm:bg-orange-700 lg:bg-green-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded'>
-        Hello
+        Hello World
       </button>
       <div className='mt-16 p-5 border border-red-500'>
         <p className='text-xl sm:text-xs'>
