@@ -3,3 +3,10 @@ body {
     background-color: #EDEDED;
 
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:valid {
+    background-color: transparent !important;
+}

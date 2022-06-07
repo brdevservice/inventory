@@ -1,12 +1,25 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './css/dist/app.css';
 
-import Isologo from './assets/isologo.png';
+// Routes
+import Login from './pages/login';
 
 function App() {
   return (
-    <div className="mx-auto py-5">
+    <Router>
+      <Routes>
+        <Route path='/' 
+          element={
+            <Login />
+          } />
+      </Routes>
+    </Router>
+  );
+}
+
+{/* <div className="mx-auto py-5">
       <img src={ Isologo } alt='GRAPPS' className='w-48 my-5 mx-auto' />
       <div className='p-6'>
         <h4 className="uppercase text-2xl text-center font-bold mb-4">
@@ -75,8 +88,6 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
+    </div> */}
 
 export default App;
