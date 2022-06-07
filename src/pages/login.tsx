@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import axios from 'axios';
 
 import Isologo from '../assets/isologo.png';
 
-export default function Login() {
+import * as usersActions from "../actions/usersActions";
+
+function Login(props:any) {
+
+    useEffect(() => {
+
+        props.get_users;
+
+    })
 
     return(
         <div className='flex items-center min-h-screen'>
@@ -44,3 +54,11 @@ export default function Login() {
     )
 
 }
+
+const mapStateToProps = (reducers:any) => {
+
+    return reducers.userReducer;
+
+}
+
+export default connect(mapStateToProps, usersActions)(Login);
